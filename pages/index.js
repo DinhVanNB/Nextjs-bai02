@@ -1,6 +1,6 @@
 
 import styles from '@/styles/Home.module.css'
-import { getStudents } from './mock-data/data';
+import { students } from '../public/mock-data/data';
 import Link from 'next/link';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            {getStudents().map(student => (
+            {students.map(student => (
                 <tr className={styles.tr} key={student.id}>
                 <td className={styles.td}>{student.id}</td>
                 <td className={styles.td}>{student.name}</td>

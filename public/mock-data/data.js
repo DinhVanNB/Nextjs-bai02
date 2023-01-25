@@ -1,4 +1,4 @@
-const students = [
+export const students = [
     {
       id: 1,
       name: "Leanne Graham"
@@ -25,6 +25,4 @@ const students = [
     }
   ];
   
-  export function getStudents() {
-    return students;
-  }
+  
